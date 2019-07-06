@@ -8,6 +8,7 @@ $light-blue-color: #5474fd;
 $white-text-with-shade: #e8e8e8;
 $josefin-font: 'Josefin Sans', sans-serif;
 $aleo-font: 'Aleo', serif;
+$dark-gray: #333333;
 
 
 .body{
@@ -217,7 +218,7 @@ $aleo-font: 'Aleo', serif;
 }
 
 .features{
-  background-color: #333333;
+  background-color: $dark-gray;
   height: 335px;
 
 
@@ -296,8 +297,92 @@ $aleo-font: 'Aleo', serif;
     }
 }
 .feedback{
+  background: url("../images/feedback-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
 
-  &__container{
-    padding-top: 115px;
+    &__container{
+      padding-top: 115px;
+    }
+
+    &__tittle{
+      font-size: 36px;
+      color: $white-text-color;
+      font-family: $aleo-font;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &__box{
+      width: 100%;
+      height: 285px;
+      display: flex;
+      margin-top: 95px;
+
+
+      &__photo{
+        width: 445px;
+        height: 100%;
+      }
+
+      &__text{
+        padding: 50px 50px 50px 60px;
+        box-sizing: border-box;
+        width: 665px;
+        height: 100%;
+        background-color: $dark-gray;
+        font-family: $josefin-font;
+        color: #fefefe;
+      }
+    }
+}
+.feedback__author{
+  font-size: 20px;
+
+  font-weight: 400;
+  font-family: $josefin-font;
+  text-transform: uppercase;
+}
+.feedback__words{
+  text-indent: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.feedback__quote{
+  color: $light-blue-color;
+  margin-top: 30px;
+}
+.footer{
+  width: 100%;
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 55px;
+  font-family: $josefin-font;
+  color: $white-text-color;
+
+  &__tittle{
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    margin-top: 13px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  &__social-links{
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    height: 14px;
   }
 }
