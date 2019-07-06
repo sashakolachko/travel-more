@@ -5,6 +5,9 @@ $white-text-color: #fff;
 $button-hover-color: rgba(4, 31, 74, 0.95);
 $button-hover-shadow: 3px 2px 30px 2px $button-hover-color;
 $light-blue-color: #5474fd;
+$light-blue-color-opacity: rgba(83, 115, 252, 0.8);
+$josefin-font: 'Josefin Sans', sans-serif;
+$aleo-font: 'Aleo', serif;
 
 
 .body{
@@ -18,12 +21,12 @@ $light-blue-color: #5474fd;
 .banner{
   background: url("../images/bg.jpg") 50% no-repeat;
   background-size: cover;
-  height: 740px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $josefin-font;
   color: $white-text-color;
 
   &__cotainer{
     padding-top: 265px;
+    padding-bottom: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +77,7 @@ $light-blue-color: #5474fd;
   font-size: 14px;
   letter-spacing: 3px;
   color: #999999;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $josefin-font;
   width: 100%;
   text-align: center;
 }
@@ -93,7 +96,7 @@ $light-blue-color: #5474fd;
   font-size: 14px;
   letter-spacing: 1px;
   color: $white-text-color;
-  font-family: 'Aleo', serif;
+  font-family: $aleo-font;
   font-weight: 400;
   margin-right: 13px;
 }
@@ -109,7 +112,7 @@ $light-blue-color: #5474fd;
   height: 80px;
   width: 100%;
   background-color: $light-blue-color;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $josefin-font;
 
   &__container{
     display: flex;
@@ -133,7 +136,7 @@ $light-blue-color: #5474fd;
 .nav__item{
   font-size: 14px;
   color: $white-text-color;
-  font-family: 'Aleo', serif;
+  font-family: $aleo-font;
   font-weight: 400;
   text-transform: uppercase;
 
@@ -152,11 +155,62 @@ $light-blue-color: #5474fd;
 .why-us{
   background: url("../images/why-bg.jpg") 50% no-repeat;
   background-size: cover;
-  height: 685px;
   padding: 120px 0;
 
   &__container{
     display: flex;
     justify-content: space-between;
   }
+
+  &__info{
+    width: 530px;
+    height: 445px;
+    padding-top: 80px;
+
+  }
+  &__photo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 475px;
+    height: 445px;
+
+  }
+}
+.info__tittle{
+  font-size: 36px;
+  color: $white-text-color;
+  font-family: $aleo-font;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+.info__description{
+  margin-top: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: #e8e8e8;
+  font-family: $josefin-font;
+}
+.photo-box__first-image {
+  align-self: flex-start;
+}
+.photo-box__second-image {
+  align-self:flex-end;
+}
+.info__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 60px;
+  background-color: $light-blue-color-opacity;
+  margin-top: 50px;
+
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $white-text-color;
+  font-family: $aleo-font;
+  font-weight: 400;
+  text-transform: uppercase;
 }
