@@ -5,7 +5,7 @@ $white-text-color: #fff;
 $button-hover-color: rgba(4, 31, 74, 0.95);
 $button-hover-shadow: 3px 2px 30px 2px $button-hover-color;
 $light-blue-color: #5474fd;
-$light-blue-color-opacity: rgba(83, 115, 252, 0.8);
+$white-text-with-shade: #e8e8e8;
 $josefin-font: 'Josefin Sans', sans-serif;
 $aleo-font: 'Aleo', serif;
 
@@ -189,7 +189,7 @@ $aleo-font: 'Aleo', serif;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 1.5;
-  color: #e8e8e8;
+  color: $white-text-with-shade;
   font-family: $josefin-font;
 }
 .photo-box__first-image {
@@ -198,13 +198,14 @@ $aleo-font: 'Aleo', serif;
 .photo-box__second-image {
   align-self:flex-end;
 }
-.info__button {
+.info__button,
+.booking-box__button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 225px;
   height: 60px;
-  background-color: $light-blue-color-opacity;
+  background-color: $light-blue-color;
   margin-top: 50px;
 
   font-size: 16px;
@@ -213,4 +214,90 @@ $aleo-font: 'Aleo', serif;
   font-family: $aleo-font;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.features{
+  background-color: #333333;
+  height: 335px;
+
+
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__item{
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+}
+.features-item__text{
+  margin-top: 30px;
+  font-size: 36px;
+  color: $white-text-with-shade;
+  font-family: $aleo-font;
+  font-weight: 400;
+}
+.dots{
+  position: relative;
+}
+.features__dots{
+  position: absolute;
+  left: 40%;
+  top: -80%;
+}
+.madrid-hotel{
+  background: url("../images/madrid.jpg") 50% no-repeat;
+  background-size: cover;
+    &__container{
+      padding-top: 230px;
+      padding-bottom: 100px;
+    }
+}
+.booking-box{
+  width: 540px;
+  height: 370px;
+  background-color: rgba(34, 34, 34, 0.85);
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 50px;
+  color: $white-text-with-shade;
+  font-family: $josefin-font;
+
+  &__city{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  &__tittle{
+    font-size: 20px;
+    color: $white-text-color;
+    margin: 30px 0;
+    text-transform: uppercase;
+  }
+  &__description{
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+.madrid-view{
+  background: url("../images/madrod2.jpg") 50% no-repeat;
+  background-size: cover;
+    &__container{
+      padding-top: 230px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: flex-end;
+    }
+}
+.feedback{
+
+  &__container{
+    padding-top: 115px;
+  }
 }
