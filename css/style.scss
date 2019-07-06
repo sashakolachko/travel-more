@@ -10,40 +10,44 @@ $josefin-font: 'Josefin Sans', sans-serif;
 $aleo-font: 'Aleo', serif;
 $dark-gray: #333333;
 
-
-.body{
+.body {
   padding: 15px;
 }
-.container{
+
+.container {
   max-width: 1100px;
   height: 100%;
   margin: 0 auto;
 }
-.banner{
+
+.banner {
   background: url("../images/bg.jpg") 50% no-repeat;
   background-size: cover;
   font-family: $josefin-font;
   color: $white-text-color;
 
-  &__cotainer{
+  &__cotainer {
     padding-top: 265px;
     padding-bottom: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__tittle{
+
+  &__tittle {
     font-size: 48px;
     letter-spacing: 5px;
     font-weight: 700;
     text-transform: uppercase;
   }
-  &__tagline{
+
+  &__tagline {
     font-size: 22px;
     letter-spacing: 7px;
     margin-top: 15px;
   }
-  &__form{
+
+  &__form {
     width: 650px;
     height: 60px;
     background-color: #fff;
@@ -51,7 +55,7 @@ $dark-gray: #333333;
     display: flex;
   }
 
-  &__scroll-box{
+  &__scroll-box {
     margin-top: 120px;
     width: 150px;
     display: flex;
@@ -59,13 +63,15 @@ $dark-gray: #333333;
     align-items: center;
   }
 }
-.scroll-box__text{
+
+.scroll-box__text {
   font-size: 14px;
   letter-spacing: 3px;
   color: $white-text-color;
   margin-bottom: 15px;
 }
-.form__input-container{
+
+.form__input-container {
   width: 500px;
   height: 100%;
   box-sizing: border-box;
@@ -73,8 +79,9 @@ $dark-gray: #333333;
   align-items: center;
   padding: 0 15px;
 }
-.form__search-input{
-  border:none;
+
+.form__search-input {
+  border: none;
   font-size: 14px;
   letter-spacing: 3px;
   color: #999999;
@@ -82,7 +89,8 @@ $dark-gray: #333333;
   width: 100%;
   text-align: center;
 }
-.form__search-button{
+
+.form__search-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +100,8 @@ $dark-gray: #333333;
   background-color: $light-blue-color;
   border: 2px solid #ffffff;
 }
-.search-button__text{
+
+.search-button__text {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
@@ -101,7 +110,8 @@ $dark-gray: #333333;
   font-weight: 400;
   margin-right: 13px;
 }
-.form__search-button:hover{
+
+.form__search-button:hover {
   background-color: $button-hover-color;
   border-color: $button-hover-color;
   -webkit-box-shadow: $button-hover-shadow;
@@ -109,83 +119,89 @@ $dark-gray: #333333;
   box-shadow: $button-hover-shadow;
 }
 
-.header{
+.header {
   height: 80px;
   width: 100%;
   background-color: $light-blue-color;
   font-family: $josefin-font;
 
-  &__container{
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__company-name-h2{
+
+  &__company-name-h2 {
     font-size: 24px;
     letter-spacing: 2px;
     color: $white-text-color;
     font-weight: 700;
     text-transform: uppercase;
   }
-  &__nav{
+
+  &__nav {
     width: 526px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
-.nav__item{
+
+.nav__item {
   font-size: 14px;
   color: $white-text-color;
   font-family: $aleo-font;
   font-weight: 400;
   text-transform: uppercase;
 
-  &__a{
+  &__a {
     text-decoration: none;
   }
-  &__a:visited,
-  &__a:link{
+
+  &__a:link,
+  &__a:visited {
     color: $white-text-color;
   }
-  &__a:hover{
+
+  &__a:hover {
     color: $button-hover-color;
   }
 }
 
-.why-us{
+.why-us {
   background: url("../images/why-bg.jpg") 50% no-repeat;
   background-size: cover;
   padding: 120px 0;
 
-  &__container{
+  &__container {
     display: flex;
     justify-content: space-between;
   }
 
-  &__info{
+  &__info {
     width: 530px;
     height: 445px;
     padding-top: 80px;
-
   }
-  &__photo-box{
+
+  &__photo-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 475px;
     height: 445px;
-
   }
 }
-.info__tittle{
+
+.info__tittle {
   font-size: 36px;
   color: $white-text-color;
   font-family: $aleo-font;
   font-weight: 400;
   margin-bottom: 55px;
 }
-.info__description{
+
+.info__description {
   margin-top: 30px;
   font-size: 16px;
   letter-spacing: 2px;
@@ -193,22 +209,24 @@ $dark-gray: #333333;
   color: $white-text-with-shade;
   font-family: $josefin-font;
 }
+
 .photo-box__first-image {
   align-self: flex-start;
 }
+
 .photo-box__second-image {
-  align-self:flex-end;
+  align-self: flex-end;
 }
-.info__button,
-.booking-box__button {
+
+.blue-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 225px;
   height: 60px;
   background-color: $light-blue-color;
+  background: url("../images/btn-bg.jpg");
   margin-top: 50px;
-
   font-size: 16px;
   letter-spacing: 1px;
   color: $white-text-color;
@@ -217,50 +235,59 @@ $dark-gray: #333333;
   text-transform: uppercase;
 }
 
-.features{
+.blue-button:hover {
+  background: none;
+  background-color: $white-text-color;
+  color: $light-blue-color;
+}
+
+.features {
   background-color: $dark-gray;
   height: 335px;
-
-
 
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    &__item{
+    &__item {
       height: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
   }
 }
-.features-item__text{
+
+.features-item__text {
   margin-top: 30px;
   font-size: 36px;
   color: $white-text-with-shade;
   font-family: $aleo-font;
   font-weight: 400;
 }
-.dots{
+
+.dots {
   position: relative;
 }
-.features__dots{
+
+.features__dots {
   position: absolute;
   left: 40%;
   top: -80%;
 }
-.madrid-hotel{
+
+.madrid-hotel {
   background: url("../images/madrid.jpg") 50% no-repeat;
   background-size: cover;
-    &__container{
-      padding-top: 230px;
-      padding-bottom: 100px;
-    }
+
+  &__container {
+    padding-top: 230px;
+    padding-bottom: 100px;
+  }
 }
-.booking-box{
+
+.booking-box {
   width: 540px;
   height: 370px;
   background-color: rgba(34, 34, 34, 0.85);
@@ -271,89 +298,99 @@ $dark-gray: #333333;
   color: $white-text-with-shade;
   font-family: $josefin-font;
 
-  &__city{
+  &__city {
     font-size: 20px;
     letter-spacing: 2px;
   }
-  &__tittle{
+
+  &__tittle {
     font-size: 20px;
     color: $white-text-color;
     margin: 30px 0;
     text-transform: uppercase;
   }
-  &__description{
+
+  &__description {
     font-size: 16px;
     line-height: 1.6;
   }
 }
-.madrid-view{
+
+.madrid-view {
   background: url("../images/madrod2.jpg") 50% no-repeat;
   background-size: cover;
-    &__container{
-      padding-top: 230px;
-      padding-bottom: 100px;
-      display: flex;
-      justify-content: flex-end;
-    }
+
+  &__container {
+    padding-top: 230px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
-.feedback{
+
+.feedback {
   background: url("../images/feedback-bg.jpg") 50% no-repeat;
   background-size: cover;
   padding-bottom: 200px;
 
-    &__container{
-      padding-top: 115px;
+  &__container {
+    padding-top: 115px;
+  }
+
+  &__tittle {
+    font-size: 36px;
+    color: $white-text-color;
+    font-family: $aleo-font;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__box {
+    width: 100%;
+    height: 285px;
+    display: flex;
+    margin-top: 95px;
+
+    &__photo {
+      width: 445px;
+      height: 100%;
     }
 
-    &__tittle{
-      font-size: 36px;
-      color: $white-text-color;
-      font-family: $aleo-font;
-      font-weight: 400;
-      text-align: center;
+    &__text {
+      padding: 50px 50px 50px 60px;
+      box-sizing: border-box;
+      width: 665px;
+      height: 100%;
+      background-color: $dark-gray;
+      font-family: $josefin-font;
+      color: #fefefe;
     }
-
-    &__box{
-      width: 100%;
-      height: 285px;
-      display: flex;
-      margin-top: 95px;
-
-
-      &__photo{
-        width: 445px;
-        height: 100%;
-      }
-
-      &__text{
-        padding: 50px 50px 50px 60px;
-        box-sizing: border-box;
-        width: 665px;
-        height: 100%;
-        background-color: $dark-gray;
-        font-family: $josefin-font;
-        color: #fefefe;
-      }
-    }
+  }
 }
-.feedback__author{
-  font-size: 20px;
 
+.feedback__author {
+  font-size: 20px;
   font-weight: 400;
   font-family: $josefin-font;
   text-transform: uppercase;
 }
-.feedback__words{
-  text-indent: 20px;
+
+.feedback__words {
+  text-indent: 25px;
+  margin-top: -5px;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 }
-.feedback__quote{
+
+.feedback__quote {
   color: $light-blue-color;
   margin-top: 30px;
+  height: 17px;
+  width: 20px;
 }
-.footer{
+
+.footer {
   width: 100%;
   background-color: #232323;
   display: flex;
@@ -365,20 +402,20 @@ $dark-gray: #333333;
   font-family: $josefin-font;
   color: $white-text-color;
 
-  &__tittle{
+  &__tittle {
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  &__text{
+  &__text {
     margin-top: 13px;
     font-size: 16px;
     letter-spacing: 2px;
   }
 
-  &__social-links{
+  &__social-links {
     margin-top: 33px;
     display: flex;
     justify-content: space-between;
